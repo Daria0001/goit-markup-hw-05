@@ -168,6 +168,19 @@ header {
   color: #ffffff;
 }
 
+.backdrop is-hidden {
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  margin: 222px 536px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
 .button-hero {
   font-family: "Roboto";
   width: 200px;
@@ -340,6 +353,7 @@ button:focus {
 }
 
 .flex-features {
+  position: relative;
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
@@ -348,6 +362,24 @@ button:focus {
 
 .img:not(:last-child) {
   margin-right: 30px;
+}
+
+.text-img {
+  position: absolute;
+  top: 224px;
+  right: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 2;
+  width: 370px;
+  height: 70px;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 82px;
 }
 
 /* Наша команда */

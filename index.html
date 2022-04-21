@@ -66,7 +66,12 @@
       <section class="section">
         <div class="container">
           <h1 class="hero">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button class="button-hero" type="">Заказать услугу</button>
+          <button class="button-hero" type="" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+          <button data-modal-close>Закрыть</button>
+  </div>
+</div>
         </div> 
       </section>
 
@@ -135,12 +140,21 @@
             <li class="img">
               <img src="./images/box1.jpg" alt="фото1" width="370" />
             </li>
+            <div>
+              <h2 class="text-img">ДEСКТОПНЫЕ ПРИЛОЖЕНИЯ</h2>
+            </div>
             <li class="img">
               <img src="./images/box2.jpg" alt="фото2" width="370" />
             </li>
+            <div>
+              <h2 class="text-img">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h2>
+            </div>
             <li class="img">
               <img src="./images/box3.jpg" alt="фото3" width="370" />
             </li>
+            <div>
+              <h2 class="text-img">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h2>
+            </div>
           </ul>
         </div>
       </section>
@@ -413,5 +427,7 @@
           </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
