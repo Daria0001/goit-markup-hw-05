@@ -30,14 +30,14 @@
             <li class="item">
               <a class="link-text accent" href="./index.html">Студия</a>
             </li>
-            <li class="item">
+            <li class="item-contact">
               <a class="link-text" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="item"><a class="link-text" href="">Контакты</a></li>
           </ul>
         </nav>
         <ul class="site-nav-link-contacts">
-          <li class="item-mail">
+          <li class="item-contact">
             <a class="link-contacts" href="info@devstudio.com"
               >
               <svg class="icon-contacts" width="16" height="12">
@@ -67,10 +67,6 @@
         <div class="container">
           <h1 class="hero">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button class="button-hero" type="" data-modal-open>Заказать услугу</button>
-          <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-          <button data-modal-close>Закрыть</button>
-  </div>
 </div>
         </div> 
       </section>
@@ -139,22 +135,24 @@
           <ul class="flex-features">
             <li class="img">
               <img src="./images/box1.jpg" alt="фото1" width="370" />
-            </li>
-            <div>
-              <h2 class="text-img">ДEСКТОПНЫЕ ПРИЛОЖЕНИЯ</h2>
+              <div>
+              <h3 class="text-img">ДEСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
             </div>
+            </li>
+            
             <li class="img">
               <img src="./images/box2.jpg" alt="фото2" width="370" />
-            </li>
-            <div>
-              <h2 class="text-img">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h2>
+              <div>
+              <h3 class="text-img">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
             </div>
+            </li>
+            
             <li class="img">
               <img src="./images/box3.jpg" alt="фото3" width="370" />
-            </li>
-            <div>
-              <h2 class="text-img">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h2>
+              <div>
+              <h3 class="text-img">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
             </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -427,6 +425,15 @@
           </div>
       </div>
     </footer>
+    <div class="modal-window is-hidden" data-modal>
+    <div class="window">
+      <button class="close" type="button" data-modal-close>
+        <svg class="icon-close" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#close"></use>
+                </svg>
+      </button>
+    </div>
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>
