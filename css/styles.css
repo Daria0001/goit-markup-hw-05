@@ -129,8 +129,6 @@ header {
 
 .link-contacts:hover,
 .link-contacts:focus {
-  position: absolute;
-  text-decoration: underline;
   color: #2196f3;
 }
 
@@ -250,11 +248,10 @@ header {
 }
 
 .element {
-  /* удалить  */
   display: block;
   text-decoration: none;
   overflow: hidden;
-  /*  */
+
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -281,13 +278,12 @@ header {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-/* удалить  */
+
 .button:hover,
 button:focus {
   background: #2196f3;
   color: #ffffff;
 }
-/*  */
 
 .overlay {
   height: 294px;
@@ -520,10 +516,12 @@ button:focus {
   margin-bottom: 0;
   padding-left: 0;
 }
-
 .img-a {
+  border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .img-clients {
@@ -532,16 +530,18 @@ button:focus {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-a:hover {
+  border-color: #2196f3;
 }
 
 .img-clients:hover,
 .img-clients:focus {
   fill: #2196f3;
-  border-color: #2196f3;
 }
 
 .img-a:not(:last-child) {
